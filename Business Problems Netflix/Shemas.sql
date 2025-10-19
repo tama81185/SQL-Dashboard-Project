@@ -1,7 +1,7 @@
 -- SCHEMAS of Netflix
 
-DROP TABLE IF EXISTS netflix;
-CREATE TABLE netflix
+DROP TABLE IF EXISTS netflix_titles;
+CREATE TABLE netflix_titles
 (
 	show_id	VARCHAR(5),
 	type    VARCHAR(10),
@@ -17,4 +17,4 @@ CREATE TABLE netflix
 	description VARCHAR(550)
 );
 
-SELECT * FROM netflix;
+SELECT * FROM netflix_titles;
