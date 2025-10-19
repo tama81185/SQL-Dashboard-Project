@@ -2,7 +2,7 @@
 
 ## 10 Business Problems & Solutions
 
-``sql
+```sql
 -- 1. Count the number of Movies vs TV Shows
 SELECT type, COUNT(*) 
 FROM netflix_titles 
@@ -78,5 +78,3 @@ SELECT *
 FROM netflix_titles
 WHERE type = 'TV Show'
   AND CAST(SUBSTRING_INDEX(duration, ' ', 1) AS UNSIGNED) > 5;
-
-
